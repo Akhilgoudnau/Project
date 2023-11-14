@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Avatar Adventure</title>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <header>
+        <h1>Avatar Adventure</h1>
+    </header>
+    <main>
+        <div id="story-text">Welcome to the Avatar Adventure!</div>
+        <div id="choices">
+            <button id="choice-btn">Choose</button>
+        </div>
+        <div id="image-section">
+            <img id="story-image" src="placeholder-image.jpg" alt="Avatar Image">
+        </div>
+        <button id="restart-btn" onclick="startGame()">Restart</button>
+    </main>
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            During the creation of this Avatar Adventure, I aimed to provide an engaging and interactive experience for players.
+            The process involved defining stages of the story, creating choices that impact the narrative, and incorporating human encounters
+            to add depth to the adventure.
+        </p>
+        <p>
+            Creative choices were made in selecting imagery, crafting the narrative, and designing the user interface. Each stage and choice
+            were carefully considered to create a sense of immersion and keep players invested in the storyline.
+        </p>
+        <p>
+            Challenges were encountered, such as balancing the complexity of the branching storylines and ensuring a seamless transition
+            between stages. These challenges were overcome through iterative testing and refining of the JavaScript logic.
+        </p>
+        <p>
+            Insights gained during this process include the importance of maintaining a coherent narrative while allowing for player agency.
+            The interactive nature of the 'Choose Your Own Adventure' genre requires thoughtful planning to ensure a satisfying user experience.
+        </p>
+    </section>
 </body>
-
 </html>

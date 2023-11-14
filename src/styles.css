@@ -1,21 +1,44 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
 }
 
 main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+    padding: 2em;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+#story-text {
+    margin-bottom: 1em;
+}
+
+#choices {
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    cursor: pointer;
+}
+
+#image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+#restart-btn {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
 }
