@@ -1,0 +1,91 @@
+body {
+    background-color: #FFB6C1; /* Light pink background */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* CSS */
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+  }
+  
+  .is-off {
+    background-color: black;
+  }
+  
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Update title color with mixed dark gold and black */
+h1, h2, h3, h4, h5, h6 {
+    background-image: linear-gradient(to right, black 50%, #6B5B20 50%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 5px;
+}
+
+/* Adjust colors for squares */
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+/* Change colors on click */
+.cell.lazer.clicked {
+    background-color: #ff00ff; /* Lazer color */
+}
+
+.cell.gold.clicked {
+    background-color: #ffd700; /* Gold color */
+}
+
+.cell.black.clicked {
+    background-color: #000; /* Black color */
+}
+
+.is-off {
+    background-color: black;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.addendum {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
